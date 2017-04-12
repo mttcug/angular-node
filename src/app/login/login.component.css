@@ -1,0 +1,11 @@
+.loginForm{
+  width:20%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.redTips{
+  color: red;
+}
+.input-control{
+  height: 60px;
+}
