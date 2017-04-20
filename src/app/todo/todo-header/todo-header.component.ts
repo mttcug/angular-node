@@ -28,7 +28,7 @@ export class TodoHeaderComponent implements OnInit {
   }
   ngOnInit() {
   }
-  enterUp(){
+  enterUp(value){
     this.onEnterUp.emit(true);
     this.inputValue = '';
   }

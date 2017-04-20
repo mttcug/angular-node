@@ -13,10 +13,6 @@ export class TodoService {
       .toPromise()
       .then(r=> r.json().data as todoList[]); //BLOGS;
   }
- /* getSelectedBlog(id:number):Promise<todoList>
-  {
-    let blog=new todoList();
-    return this.getBlogs().then(blogs=>blogs.find(x=>x.id==id));
-  }*/
+
 
 }

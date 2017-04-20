@@ -14,7 +14,7 @@ export class TodoComponent implements OnInit {
 
   constructor(@Inject('todoService')  private service) {
     var  _this=this;
-    this.service.getToDoItems().then(function(result){
+    _this.service.getToDoItems().then(function(result){
       _this.todoList=result;
     });
   }
@@ -23,11 +23,27 @@ export class TodoComponent implements OnInit {
   }
 
   addTodo(){
-
   }
 
   onTextChanges(value) {
-   /* this.desc = value;*/
+  }
+
+  /*列表*/
+  removeToDoItem($event){
+/*    todoList.forEach(function(index,item){
+      if(item.title==$event.title){
+        /!*todoList.splice(index,1);*!/
+      }
+    });*/
+
+    for(let i=0;i<(this.todoList).length;i++){
+      if($event.title==this.todoList[i].title){
+        this.todoList.splice(i,1);
+      }
+    }
+
+      console.log("todoList:",this.todoList);
+
   }
 
 }
