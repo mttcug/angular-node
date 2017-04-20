@@ -1,0 +1,10 @@
+.todo-footer span{
+  margin: 0px 12px;
+}
+.todo-footer span:nth-of-type(1){
+  margin-right: 20%;
+  margin-left: 20px;
+}
+.todo-footer span:nth-of-type(5){
+  margin-left: 65px;
+}

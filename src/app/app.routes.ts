@@ -3,7 +3,7 @@
  */
 import {Routes,RouterModule} from '@angular/router';
 import {LoginComponent } from './login/login.component';
-import {TodoComponent } from './todo/todo.component';
+
 
 export const routes:Routes=[
   {
@@ -13,7 +13,7 @@ export const routes:Routes=[
   },
   {
     path:'todo',
-    component:TodoComponent
+    redirectTo:'todo'
   },
   {
     path:'login',

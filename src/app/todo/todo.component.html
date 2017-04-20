@@ -1,3 +1,9 @@
-<p>
-  todo works!
-</p>
+<div class="todo-list">
+ <app-todo-header placeholder="what do you want?" (onEnterUp)="addTodo()" delay="300" (onTextChange)="onTextChange($event)"></app-todo-header>
+  <div class="todo-body">
+    <ul class="list-group" >
+      <li class="list-group-item" *ngFor="let item of todoList" >{{item.title}}</li>
+    </ul>
+  </div>
+  <app-todo-footer></app-todo-footer>
+</div>
