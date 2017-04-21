@@ -2,7 +2,7 @@
 <div class="todo-body">
   <ul class="list-group" >
     <li class="list-group-item" *ngFor="let item of todoLists" >
-      <input type="radio" (click)="choosedItem()">
+      <input type="checkbox" (click)="fireChoosedItem(item)">
       <span>{{item.title}}</span>
       <span class="destory"  (click)="fireRemoveItem(item);$event.stopPropagation()" ><img src="../src/app/todo/delete.png" alt=""></span>
     </li>

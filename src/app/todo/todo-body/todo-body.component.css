@@ -9,6 +9,6 @@ img{
   width: 25px;
   height: 25px;
 }
-input[type='radio']{
+input[type='checkbox']{
   vertical-align: top;
 }

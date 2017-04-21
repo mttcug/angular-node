@@ -15,6 +15,11 @@ export class TodoBodyComponent implements OnInit {
 
   @Input() todoLists:todoList[]=[];
   @Output() removeItem=new EventEmitter<any>();
+  @Output() chooseToDoItem=new  EventEmitter<any>();
+
+  fireChoosedItem(item:todoList){
+    this.chooseToDoItem.emit(item);
+  }
 
   fireRemoveItem(item:todoList){
     this.removeItem.emit(item);

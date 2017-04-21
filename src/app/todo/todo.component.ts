@@ -22,7 +22,11 @@ export class TodoComponent implements OnInit {
   ngOnInit() {
   }
 
-  addTodo(){
+  addTodo($event){
+    var newToDoItem={title:""};
+    newToDoItem.title=$event;
+    this.todoList.push(newToDoItem);
+    console.log("newTodoLits:",this.todoList);
   }
 
   onTextChanges(value) {
@@ -41,9 +45,6 @@ export class TodoComponent implements OnInit {
         this.todoList.splice(i,1);
       }
     }
-
-      console.log("todoList:",this.todoList);
-
   }
 
 }

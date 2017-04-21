@@ -14,5 +14,9 @@ export class TodoService {
       .then(r=> r.json().data as todoList[]); //BLOGS;
   }
 
+/*  addItemToLists(item:todoList):Promise<todoList[]>{
+   /!* return this.http.add*!/
+  }*/
+
 
 }

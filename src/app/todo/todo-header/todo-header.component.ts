@@ -17,7 +17,7 @@ export class TodoHeaderComponent implements OnInit {
   //detect the input value and output this to parent
 @Output() textChanges = new EventEmitter<string>();
   //detect the enter keyup event and output this to parent
-@Output() onEnterUp = new EventEmitter<boolean>();
+@Output() enterUp = new EventEmitter<string>();
 
   constructor(private elementRef: ElementRef) {
     const event$ = Observable.fromEvent(elementRef.nativeElement, 'keyup')
@@ -28,8 +28,9 @@ export class TodoHeaderComponent implements OnInit {
   }
   ngOnInit() {
   }
-  enterUp(value){
-    this.onEnterUp.emit(true);
+  fireEnterUp(value){
+    console.log("input:",value);
+    this.enterUp.emit(value);
     this.inputValue = '';
   }
 }
