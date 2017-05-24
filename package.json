@@ -10,6 +10,19 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "serve": {
+    "type": "object",
+    "properties": {
+      "port": {
+        "type": "number",
+        "default": "4500"
+      },
+      "host": {
+        "type": "string",
+        "default": "localhost"
+      }
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "^4.0.0",
@@ -20,7 +33,10 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.26",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
@@ -29,9 +45,7 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
-    "bower": "^1.8.0",
     "codelyzer": "~2.0.0",
-    "gulp": "^3.9.1",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
     "karma": "~1.4.1",
@@ -43,7 +57,6 @@
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0",
-    "webpack": "^2.3.3"
+    "typescript": "~2.2.0"
   }
 }

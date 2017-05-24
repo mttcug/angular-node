@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule,Routes } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -22,7 +23,8 @@ import { TodoModule } from './todo/todo.module';
     FormsModule,
     HttpModule,
     routing,
-    TodoModule
+    TodoModule,
+    NgbModule.forRoot()
   ],
   providers: [{
     //登录

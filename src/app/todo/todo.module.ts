@@ -9,7 +9,7 @@ import { TodoComponent } from './todo.component';
 import { TodoBodyComponent } from './todo-body/todo-body.component';
 import { TodoFooterComponent } from './todo-footer/todo-footer.component';
 import { TodoHeaderComponent } from './todo-header/todo-header.component';
-import { TodoService } from './todo.service';
+import { TodoService } from './service/todo.service';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service'
 

@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Headers,Http,Response  } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import { todoList,TODOLISTS } from './todo';
-@Injectable()
+import { todoList,TODOLISTS } from '../todo';
 export class TodoService {
-
   constructor( private http:Http ) { }
   private api_url = 'api/todoLists';
 
@@ -13,10 +11,5 @@ export class TodoService {
       .toPromise()
       .then(r=> r.json().data as todoList[]); //BLOGS;
   }
-
-/*  addItemToLists(item:todoList):Promise<todoList[]>{
-   /!* return this.http.add*!/
-  }*/
-
 
 }
