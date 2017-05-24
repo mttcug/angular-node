@@ -15,7 +15,9 @@ export class LoginComponent implements OnInit {
   }
 
 onSubmit(formValue){
-  console.log(this.service.loginWithCredentials(formValue.username,formValue.password));
+  this.service.loginWithCredentials(formValue.username,formValue.password).then(function(){
+   /* this.router.navigate(['./ById', {id: id}]);*/
+  });
 };
 
 }
