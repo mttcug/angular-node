@@ -16,6 +16,7 @@ import { routing } from './app.routes';
 //自定义模块
 import { TodoModule } from './module/todo/todo.module';
 import { HomeModule } from './module/home/home.module';
+import { DirectionaryModule } from './module/directionary/directionary.module';
 
 import { RegisterComponent } from './component/register/register.component';
 import { RetrievePasswordComponent } from './component/retrieve-password/retrieve-password.component';
@@ -36,6 +37,7 @@ import { RetrievePasswordComponent } from './component/retrieve-password/retriev
     routing,
     TodoModule,
     HomeModule,
+    DirectionaryModule,
     NgbModule.forRoot()
   ],
   providers: [

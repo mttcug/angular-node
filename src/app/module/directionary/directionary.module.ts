@@ -1,10 +1,19 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { DirectionaryComponent } from '../../component/directionary/directionary.component';
+
+import { routing} from './directionary.routes';
+
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    routing
   ],
-  declarations: []
+  declarations: [
+    DirectionaryComponent
+  ]
 })
 export class DirectionaryModule { }

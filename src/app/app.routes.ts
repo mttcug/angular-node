@@ -34,6 +34,10 @@ export const routes:Routes=[
   {
     path:'home',
     redirectTo:'home'
+  },
+  {
+    path:'directionary',
+    redirectTo:'directionary'
   }
 ]
 export const routing = RouterModule.forRoot(routes);
