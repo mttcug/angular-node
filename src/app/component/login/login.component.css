@@ -12,3 +12,13 @@
 .input-control{
   height: 60px;
 }
+.page-navigate{
+  margin-top: 10px;
+}
+.page-navigate a{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  text-align: left;
+}

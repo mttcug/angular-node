@@ -1,6 +1,6 @@
 <form name="loginForm" class="loginForm" #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
   <fieldset>
-    <legend>登录</legend>
+    <legend>登陆</legend>
     <div class="input-control">
       <input type="text" class="form-control" required minlength="3" #usernameRef="ngModel" name="username" [(ngModel)]="username"  placeholder="请输入用户名"/>
       <div *ngIf="usernameRef.errors?.required" class="redTips">this is required</div>
@@ -11,7 +11,7 @@
       <div *ngIf="passwordRef.errors?.required" class="redTips">this is required</div>
     </div>
     <button type="submit" class="form-control btn btn-primary">login</button>
-   <!-- <p><a [router-link]="['./todo']">todo-lists</a></p>-->
+    <p class="page-navigate"><a [routerLink]="['/register']" routerLinkActive="active">register</a><a [routerLink]="['/retrievePassword']" routerLinkActive="active"> retrieve password</a></p>
   </fieldset>
 </form>
 

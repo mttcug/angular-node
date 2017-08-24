@@ -6,12 +6,12 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { routing} from './todo.routes'
 
-import { TodoComponent } from './todo.component';
-import { TodoBodyComponent } from './todo-body/todo-body.component';
-import { TodoFooterComponent } from './todo-footer/todo-footer.component';
-import { TodoHeaderComponent } from './todo-header/todo-header.component';
-import { TodoService } from './service/todo.service';
-import { InMemoryDataService } from './in-memory-data.service'
+import { TodoComponent } from '../../component/todo/todo.component';
+import { TodoBodyComponent } from '../../component/todo-body/todo-body.component';
+import { TodoFooterComponent } from '../../component/todo-footer/todo-footer.component';
+import { TodoHeaderComponent } from '../../component/todo-header/todo-header.component';
+import { TodoService } from '../../service/todo/todo.service';
+import { InMemoryDataService } from '../../service/dataService/in-memory-data.service';
 
 @NgModule({
   imports: [

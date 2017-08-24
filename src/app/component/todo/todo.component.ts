@@ -1,7 +1,7 @@
 import { Component, OnInit ,Inject} from '@angular/core';
-import {TodoHeaderComponent } from './todo-header/todo-header.component';
-import {TodoBodyComponent } from './todo-body/todo-body.component';
-import {TodoFooterComponent } from './todo-footer/todo-footer.component';
+import { TodoHeaderComponent } from '../todo-header/todo-header.component';
+import { TodoBodyComponent } from '../todo-body/todo-body.component';
+import { TodoFooterComponent } from '../todo-footer/todo-footer.component';
 import {todoList} from './todo';
 
 @Component({

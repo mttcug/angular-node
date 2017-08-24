@@ -1,0 +1,16 @@
+<form name="registerForm" class="registerForm" #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
+  <fieldset>
+    <legend>注册</legend>
+    <div class="input-control">
+      <input type="text" class="form-control" required minlength="3" #usernameRef="ngModel" name="username" [(ngModel)]="username"  placeholder="请输入用户名"/>
+      <div *ngIf="usernameRef.errors?.required" class="redTips">this is required</div>
+      <div *ngIf="usernameRef.errors?.minlength" class="redTips">should be at least 3 charactors</div>
+    </div>
+    <div class="input-control">
+      <input type="password" class="form-control" required #passwordRef="ngModel" name="password" [(ngModel)]="password" placeholder="请输入密码"/>
+      <div *ngIf="passwordRef.errors?.required" class="redTips">this is required</div>
+    </div>
+    <button type="submit" class="form-control btn btn-primary">register</button>
+  </fieldset>
+</form>
+

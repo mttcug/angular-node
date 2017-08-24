@@ -6,15 +6,17 @@ import { RouterModule,Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 //组建
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './component/login/login.component';
 //服务
-import { AuthService } from './core/auth.service';
-import { JsonRpcService } from './json-rpc/json-rpc.service';
-import { HttpService } from './request/http.service';
+import { AuthService } from './service/core/auth.service';
+import { JsonRpcService } from './service/json-rpc/json-rpc.service';
+import { HttpService } from './service/request/http.service';
 //路由
 import { routing } from './app.routes';
 //自定义模块
-import { TodoModule } from './todo/todo.module';
+import { TodoModule } from './module/todo/todo.module';
+import { RegisterComponent } from './component/register/register.component';
+import { RetrievePasswordComponent } from './component/retrieve-password/retrieve-password.component';
 
 
 
@@ -22,6 +24,8 @@ import { TodoModule } from './todo/todo.module';
   declarations: [
     AppComponent,
     LoginComponent,
+    RegisterComponent,
+    RetrievePasswordComponent,
   ],
   imports: [
     BrowserModule,

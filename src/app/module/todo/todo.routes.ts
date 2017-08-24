@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/4/17 0017.
  */
 import { Routes, RouterModule } from '@angular/router';
-import { TodoComponent } from './todo.component';
+import { TodoComponent } from '../../component/todo/todo.component';
 
 export const routes: Routes = [
   {

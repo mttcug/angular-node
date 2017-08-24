@@ -1,0 +1,24 @@
+.registerForm{
+  width:20%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.redTips{
+  color: red;
+}
+.input-control{
+  height: 60px;
+}
+.page-navigate{
+  margin-top: 10px;
+}
+.page-navigate a{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  text-align: left;
+}
