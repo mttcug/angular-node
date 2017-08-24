@@ -12,7 +12,7 @@ import { RetrievePasswordComponent } from './component/retrieve-password/retriev
 export const routes:Routes=[
   {
     path:'',
-    redirectTo:'login',
+    redirectTo:'home',
     pathMatch:'full'
   },
   {
@@ -30,6 +30,10 @@ export const routes:Routes=[
   {
     path:'retrievePassword',
     component:RetrievePasswordComponent
+  },
+  {
+    path:'home',
+    redirectTo:'home'
   }
 ]
 export const routing = RouterModule.forRoot(routes);

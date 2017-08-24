@@ -15,6 +15,8 @@ import { HttpService } from './service/request/http.service';
 import { routing } from './app.routes';
 //自定义模块
 import { TodoModule } from './module/todo/todo.module';
+import { HomeModule } from './module/home/home.module';
+
 import { RegisterComponent } from './component/register/register.component';
 import { RetrievePasswordComponent } from './component/retrieve-password/retrieve-password.component';
 
@@ -25,7 +27,7 @@ import { RetrievePasswordComponent } from './component/retrieve-password/retriev
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    RetrievePasswordComponent,
+    RetrievePasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { RetrievePasswordComponent } from './component/retrieve-password/retriev
     HttpModule,
     routing,
     TodoModule,
+    HomeModule,
     NgbModule.forRoot()
   ],
   providers: [

@@ -4,7 +4,7 @@
     <li class="list-group-item" *ngFor="let item of todoLists" >
       <input type="checkbox" (click)="fireChoosedItem(item)">
       <span>{{item.title}}</span>
-      <span class="destory"  (click)="fireRemoveItem(item);$event.stopPropagation()" ><img src="../../static/img/delete.png" alt=""></span>
+      <span class="destory"  (click)="fireRemoveItem(item);$event.stopPropagation()" ><img src="src/app/static/img/delete.png" alt=""></span>
     </li>
   </ul>
 </div>

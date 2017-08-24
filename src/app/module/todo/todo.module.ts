@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
-import { routing} from './todo.routes'
+import { routing} from './todo.routes';
 
 import { TodoComponent } from '../../component/todo/todo.component';
 import { TodoBodyComponent } from '../../component/todo-body/todo-body.component';
