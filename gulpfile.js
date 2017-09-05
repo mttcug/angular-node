@@ -2,19 +2,25 @@
  * Created by Administrator on 2017/5/5 0005.
  */
 var gulp=require("gulp");
-var sass=require("gulp-sass");
-var cssnano=require("gulp-cssnano");
+var cleanCss=require('gulp-clean-css');
 var jsuglify=require("gulp-uglify");
 var typescript=require("gulp-typescript");
 var tsProject=typescript.createProject("tsconfig.json");
 var imagemin=require("gulp-imagemin");
 
 
-gulp.task("build-css",function(){
-  return gulp.src("./sass/*.scss")
-    .pipe(sass())
-    .pipe(cssnano())
-    .pipe(gulp.dest("./css"));
+gulp.task("build-client",function(){
+  return gulp.src("./client/**,!./client/e2e")
+    .pipe(gulp.dest("./dist/client"));
+})
+gulp.task("build-serve",function(){
+    return gulp.src("./serve/**")
+        .pipe(gulp.dest("./dist/serve"));
+})
+
+/*启动服务器*/
+gulp.task('nodemon',function () {
+    
 })
 
 gulp.task("build-js",function(){
